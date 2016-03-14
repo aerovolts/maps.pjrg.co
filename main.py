@@ -12,13 +12,13 @@ def home():
     return render_template('pages/index.html', author=author, year=year, title=title, description=description)
 
 @app.route('/2016-election/republican-primaries')
-def about():
+def republican_primaries_2016():
     title = 'Republican Primary Results | 2016 Presidential Electon'
     description = 'A web map displaying the results of the 2016 Republican Primaries prior to the 2016 General Election.'
     return render_template('pages/2016-republican-primaries.html', author=author, year=year, title=title, description=description)
 
 @app.route('/2016-election/democratic-primaries')
-def about():
+def democratic_primaries_2016():
     title = 'Republican Primary Results | 2016 Presidential Electon'
     description = 'A web map displaying the results of the 2016 Democratic Primaries prior to the 2016 General Election.'
     return render_template('pages/2016-democratic-primaries.html', author=author, year=year, title=title, description=description)
