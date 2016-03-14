@@ -17,5 +17,11 @@ def about():
     description = 'A web map displaying the results of the 2016 Republican Primaries prior to the 2016 General Election.'
     return render_template('pages/2016-republican-primaries.html', author=author, year=year, title=title, description=description)
 
+@app.route('/2016-election/democratic-primaries')
+def about():
+    title = 'Republican Primary Results | 2016 Presidential Electon'
+    description = 'A web map displaying the results of the 2016 Democratic Primaries prior to the 2016 General Election.'
+    return render_template('pages/2016-democratic-primaries.html', author=author, year=year, title=title, description=description)
+
 if __name__ == '__main__':
     app.run()

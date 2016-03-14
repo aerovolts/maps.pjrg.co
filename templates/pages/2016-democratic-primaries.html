@@ -7,7 +7,7 @@
   <!-- Map Content -->
 </div>
 
-<script src="../../static/data/2016-republican-primaries.js"></script>
+<script src="../../static/data/2016-democratic-primaries.js"></script>
 <script>
 
 		var map = L.map('map').setView([37.8, -96], 5);
@@ -32,15 +32,13 @@
 		};
 
     function getWinner(n) {
-      return n < 1 ? 'Ted Cruz' :
-             n < 2 ? 'John Kasich' :
-             n < 3 ? 'Marco Rubio' :
-             n < 4 ? 'Donald Trump' :
+      return n < 1 ? 'Bernie Sanders' :
+             n < 2 ? 'Hillary Clinton' :
                      ' None Yet';
     }
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>US Presidential Election 2016</h4>' + '<br />' + 'Republican Primary Winners' + '<br/><br />' +  (props ?
+			this._div.innerHTML = '<h4>US Presidential Election 2016</h4>' + '<br />' + 'Democratic Primary Winners' + '<br/><br />' +  (props ?
 				'<b>' + props.name + '</b><br />' + 'Winner: ' + getWinner(props.winner)
 				: 'Hover over a state');
 		};
@@ -50,8 +48,6 @@
 		function getColor(c) {
 			return c < 1  ? '#DAA520' :
 			       c < 2  ? '#80cdc1' :
-			       c < 3  ? '#C60E3B' :
-			       c < 4  ? '#283681' :
                       '#f5f5f5';
 		}
 
@@ -115,7 +111,7 @@
 
 			var div = L.DomUtil.create('div', 'info legend'),
 				grades = [0, 1, 2, 3],
-        names = ['Ted Cruz', 'John Kasich', 'Marco Rubio', 'Donald Trump'],
+        names = ['Bernie Sanders', 'Hillary Clinton'],
 				labels = [],
 				from, to;
 
