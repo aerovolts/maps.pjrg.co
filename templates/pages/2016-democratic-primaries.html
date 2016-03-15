@@ -10,7 +10,7 @@
 <script src="../../static/data/2016-democratic-primaries.js"></script>
 <script>
 
-		var map = L.map('map').setView([37.8, -96], 5);
+		var map = L.map('map').setView([37.8, -96], 4);
 
     //Replace TOKEN with you mapbox.com access token
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=TOKEN', {
@@ -46,9 +46,9 @@
 		info.addTo(map);
 
 		function getColor(c) {
-			return c < 1  ? '#DAA520' :
-			       c < 2  ? '#80cdc1' :
-                      '#f5f5f5';
+			return c < 1  ? '#228B22' :
+			       c < 2  ? '#D4AA00' :
+                      '#c0c0c0';
 		}
 
 		function style(feature) {

@@ -25,7 +25,7 @@ def republican_primaries_2016():
 
 @app.route('/2016-election/democratic-primaries')
 def democratic_primaries_2016():
-    title = 'Republican Primary Results | 2016 U.S. Presidential Electon'
+    title = 'Democratic Primary Results | 2016 U.S. Presidential Electon'
     description = 'A web map displaying the results of the 2016 U.S. Democratic Primaries prior to the 2016 U.S. General Election.'
     return render_template('pages/2016-democratic-primaries.html', author=author, year=year, title=title, description=description)
 
