@@ -23,6 +23,12 @@ def election_2016():
     description = 'An index of all mapping projects focused on the 2016 U.S. Presidential Elections.'
     return render_template('pages/2016-election.html', author=author, year=year, title=title, description=description)
 
+@app.route('/2016-election/general-election')
+def general_election_2016():
+    title = '2016 U.S. General Election Results | Patrick Guelcher'
+    description = 'A web map displaying the results of the 2016 U.S. General Election.'
+    return render_template('pages/2016-general-election.html', author=author, year=year, title=title, description=description)
+
 @app.route('/2016-election/republican-primaries')
 def republican_primaries_2016():
     title = 'Republican Primary Results | 2016 U.S. Presidential Electon'
