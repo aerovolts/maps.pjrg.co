@@ -37,13 +37,10 @@
                      ' None Yet';
     }
 
-		function getDate(d) {
-			return d;
-		}
 
 		info.update = function (props) {
 			this._div.innerHTML = '<h4>US Presidential Election 2016</h4>' + '<br />' + 'Democratic Primary Winners' + '<br/><br />' +  (props ?
-				'<b>' + props.name + '</b><br /><br />' + 'Date: ' + getDate(props.date) + '<br/>' + 'Winner: ' + getWinner(props.winner)
+				'<b>' + props.name + '</b><br /><br />' + 'Date: ' + props.date + '<br/>' + 'Winner: ' + getWinner(props.winner)
 				: 'Hover over a state');
 		};
 
