@@ -11,6 +11,12 @@ def home():
     description = 'The central index of web mapping projects created by Patrick Guelcher.'
     return render_template('pages/index.html', author=author, year=year, title=title, description=description)
 
+@app.route('/where-ive-lived')
+def where_ive_lived():
+    title = 'Where I Have Lived | Patrick Guelcher'
+    description = 'A map showing all the places where Patrick Guelcher has lived.'
+    return render_template('pages/where-ive-lived.html', author=author, year=year, title=title, description=description)
+
 @app.route('/2016-election')
 def election_2016():
     title = '2016 U.S. Election Results | Patrick Guelcher'
