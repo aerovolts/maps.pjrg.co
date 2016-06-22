@@ -7,6 +7,7 @@ var augusta           = [33.473170, -82.011233],
     rochester         = [43.162346, -77.618570],
     montclair         = [38.617130, -77.349976],
     woodbridge        = [38.641498, -77.266830],
+    woodbridge2       = [38.598472, -77.279385],
     blacksburg        = [37.229748, -80.414694];
 
 var route = L.featureGroup([
@@ -28,7 +29,9 @@ var route = L.featureGroup([
   L.polyline([montclair, woodbridge]),
   L.marker(woodbridge).bindPopup("Woodbridge, Virginia"),
   L.polyline([woodbridge, blacksburg]),
-  L.marker(blacksburg).bindPopup("Blacksburg, Virginia")
+  L.marker(blacksburg).bindPopup("Blacksburg, Virginia"),
+  L.polyline([blacksburg, woodbridge2]),
+  L.marker(woodbridge2).bindPopup("Woodbridge 2, Virginia")
 ]);
 
 var map = L.map('map');
