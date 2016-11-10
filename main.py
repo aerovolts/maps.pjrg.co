@@ -41,11 +41,5 @@ def democratic_primaries_2016():
     description = 'A web map displaying the results of the 2016 U.S. Democratic Primaries prior to the 2016 U.S. General Election.'
     return render_template('pages/2016-democratic-primaries.html', author=author, year=year, title=title, description=description)
 
-@app.route('/country')
-def country():
-    title = '2016 U.S. Election Results | Patrick Guelcher'
-    description = 'An index of all mapping projects focused on the 2016 U.S. Presidential Elections.'
-    return render_template('pages/bestcountry.html', author=author, year=year, title=title, description=description)
-
 if __name__ == '__main__':
     app.run()
