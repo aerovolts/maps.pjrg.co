@@ -32,8 +32,8 @@
 		};
 
     function getWinner(n) {
-      return n < 1 ? 'Republican Nominee' :
-             n < 2 ? 'Democratic Nominee' :
+      return n < 1 ? 'Donald Trump (R)' :
+             n < 2 ? 'Hillary Clinton (D)' :
                      'None Yet';
     }
 
@@ -112,7 +112,7 @@
 
 			var div = L.DomUtil.create('div', 'info legend'),
 				grades = [0, 1],
-        names = ['Republican Nominee', 'Democratic Nominee'],
+        names = ['Donald Trump (R)', 'Hillary Clinton (D)'],
 				labels = [],
 				from, to;
 
